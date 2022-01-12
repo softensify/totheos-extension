@@ -1,0 +1,48 @@
+<html>
+
+<head>
+
+<meta name="copyright" content="Copyright(c) 2022 Softensify Pty Ltd. www.softensify.com All rights reserved." />
+
+<style>
+.button {
+	height: 30px;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	width: 100px;
+}
+</style>
+</head>
+
+<body style="margin: auto;font-size: 16px; width: 700px;line-height: 150%">
+	<br/><br/>
+	<div><img src="48.png" style="float:left"/><div style="float:left;margin:15px 0 0 15px;font-weight:bold;font-size: 30px;">ToTheOS</div></div>
+	<br/><br/><br/><br/>
+
+	<div>
+		Web Browser Extension <b id="extension1"></b>
+		<span style="display:none" id="first">is requesting new permission(s) to run native application code:<br/></span>
+		<span style="display:none" id="other1">is requesting additional permission(s) to run native application code.<br/></span>
+		<div style="display:none">(ID: <span id="id"></span>)</div>
+		<div style="display:none">Page on Chrome Web Store: <a id="url" href="#">click here</a> (opens in new tab)</div>
+		<div style="display:none" id="grantedHeader"><br/>You already granted <b id="extension2"></b> the following permission(s):</div>
+		<ul id="granted"></ul>
+		<div style="display:none" id="other2"><br/><b id="extension3"></b> is requesting new permission(s) for native application code:</div>
+		<ul id="ask"></ul>
+	</div>
+
+	<br/>Granting permission to <b id="extension4"></b> will allow it to access security sensitive functionality on your computer. 
+	Learn about how <b id="extension5"></b> will handle your data by reviewing its terms of service and privacy policies. 
+	<br/><br/>
+
+	<div style="text-align:right;margin-right:50px;margin-top:5px">
+		<input class="button" style="border: solid 2px #1967d2; color: #1967d2" type="button" value="Decline" id="reject"/>
+		<input class="button" style="background: #1967d2; color: white;margin-left: 10px" type="button" value="Accept" id="grant"/>
+	</div>
+
+	<script src="permissionsStart.js" type="text/javascript"></script>
+
+</body>
+
+</html>

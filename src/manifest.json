@@ -1,0 +1,35 @@
+{
+    "short_name": "ToTheOS",
+    "name": "ToTheOS Native Messaging Framework",
+    "description": "ToTheOS is a native messaging framework for web browser extensions.",
+    "manifest_version": 2,
+    "version": "0.0.1",
+    "icons": {
+        "16": "16.png",
+        "48": "48.png",
+        "96": "96.png",
+        "128": "128.png"
+    },
+    "background": {
+        "scripts": [
+            "backgroundStart.js"
+        ]
+    },
+    "browser_action": {
+        "default_icon": {
+            "16": "16.png",
+            "19": "19.png",
+            "32": "32.png",
+            "38": "38.png",
+            "64": "64.png"
+        },
+        "default_title": "ToTheOS Extension",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "nativeMessaging",
+        "storage",
+        "alarms",
+        "management"
+    ]
+}
