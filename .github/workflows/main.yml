@@ -35,7 +35,7 @@ jobs:
 
       - name: coverage
         env:
-          CODECOV_TOKEN: ${{secrets.CODECOV_TOKEN}}
+          CODECOV_TOKEN: ${{main.CODECOV_TOKEN}}
         run: | 
           curl -Os https://uploader.codecov.io/latest/linux/codecov
           chmod +x codecov 
