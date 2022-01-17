@@ -32,3 +32,11 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: test
         run: ./node_modules/.bin/karma start --single-run
+
+      - name: coverage
+        env:
+          CODECOV_TOKEN: ${{secrets.CODECOV_TOKEN}}
+        run: | 
+          curl -Os https://uploader.codecov.io/latest/linux/codecov
+          chmod +x codecov 
+          ./codecov -t ${CODECOV_TOKEN}
